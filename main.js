@@ -1,33 +1,15 @@
-const todos = [
-  {
+const x = 10;
 
-    id: 1,
-    text: "take out rubbish",
-    isCompleted: true
+const color = x > 10 ? 'red' : 'blue';
 
-  },
-  {
-
-    id: 2,
-    text: "study code",
-    isCompleted: false
-
-  },
-  {
-
-    id: 3,
-    text: "wash dishes",
-    isCompleted: true
-
+switch(color){
+  case 'red':
+    console.log('color is red');
+    break;
+  case 'blue':
+    console.log('color is blue');
+    break;
+  default:
+    console.log("color is not red or blue");
+    break;
   }
-
-];
-
-
-const todoCompleted = todos.filter(function(todo){
-  return todo.isCompleted === true;
-}).map(function(todo){
-  return todo.text;
-})
-
-console.log(todoCompleted);
