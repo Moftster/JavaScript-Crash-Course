@@ -165,5 +165,8 @@ var button = document.getElementById('button').addEventListener
 ('click', buttonClick);
 
 function buttonClick() {
-  console.log("You clicked");
+  // console.log("You clicked");
+  document.getElementById('header-title').textContent = 'Changed';
+  document.querySelector('#main').style.backgroundColor = 'orange';
+
 }
