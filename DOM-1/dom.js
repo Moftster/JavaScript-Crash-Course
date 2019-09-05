@@ -132,29 +132,38 @@ var itemList = document.querySelector('#items');
 
 // createElement
 
-// Create a div
-var newDiv = document.createElement('div');
+// // Create a div
+// var newDiv = document.createElement('div');
+//
+// // Add class
+// newDiv.className = 'hello';
+//
+// // Add id
+// newDiv.id = 'idName';
+//
+// // Add attr
+// newDiv.setAttribute('title', 'Hello div');
+//
+// // Create text nodes
+// var newDivText = document.createTextNode('Hello World');
+//
+// // Add text to div
+// newDiv.appendChild(newDivText);
+//
+// var container = document.querySelector('header .container');
+// var h1 = document.querySelector('header h1');
+//
+// console.log(newDiv);
+//
+// newDiv.style.fontSize = '30px';
+//
+// container.insertBefore(newDiv, h1);
 
-// Add class
-newDiv.className = 'hello';
+// Add event listener
 
-// Add id
-newDiv.id = 'idName';
+var button = document.getElementById('button').addEventListener
+('click', buttonClick);
 
-// Add attr
-newDiv.setAttribute('title', 'Hello div');
-
-// Create text nodes
-var newDivText = document.createTextNode('Hello World');
-
-// Add text to div
-newDiv.appendChild(newDivText);
-
-var container = document.querySelector('header .container');
-var h1 = document.querySelector('header h1');
-
-console.log(newDiv);
-
-newDiv.style.fontSize = '30px';
-
-container.insertBefore(newDiv, h1);
+function buttonClick() {
+  console.log("You clicked");
+}
